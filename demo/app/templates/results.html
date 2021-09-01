@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Results Page</h1>
+    <h2>"{{ query }}" top {{ topk }} results:</h2>
+    <table style="width:100%">
+        {% for video_row in vid_data | batch(4, '&nbsp;') %}
+        <tr>
+            {% for vd in video_row %}
+            <th>
+                <div>
+                <video width="320" autoplay muted loop>
+                    <source src="https://ak.picdn.net/shutterstock/videos/{{ vd.relurl }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                    <p>{{ vd.similarity }}</p>
+                </div>
+            </th>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
