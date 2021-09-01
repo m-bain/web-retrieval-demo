@@ -105,8 +105,8 @@ if __name__ == "__main__":
     parser.add_argument('--data_root', default='./data', type=Path,
                         help='Directory where embeds are saved to.')
     parser.add_argument('--cut', default='2M', type=str)
-    parser.add_argument('--split', default='test', type=str)
-    parser.add_argument('--split_to_train_on', default='test', type=str)
+    parser.add_argument('--split', default='train', type=str)
+    parser.add_argument('--split_to_train_on', default='train_50ksubset', type=str)
     parser.add_argument('--n_partitions', default=1, type=int)
     parser.add_argument('--part', default=0, type=int)
     parser.add_argument('--port_num', default=12010, type=int,

@@ -78,7 +78,7 @@ if __name__ == "__main__":
                         help='Directory where embeds are saved to.')
     parser.add_argument('--dataset', default='WebVid', type=str)
     parser.add_argument('--cut', default='2M', type=str)
-    parser.add_argument('--split', default='test', type=str)
+    parser.add_argument('--split', default='train', type=str)
     parser.add_argument('--port_num', default=12011, type=int,
                         help='port number')
     parser.add_argument('--machine', default='localhost', type=str,
