@@ -35,6 +35,22 @@ I am not sure what you typically use in production but the guide uses `Waitress`
 >$ pip install waitress
 
 
+### GENERAL OUTLINE.
 
+1. User writes text query in web form
+
+2. Web form sent to client
+
+3. client sends to text encoder server
+
+4. text encoder server sends back a vector to client
+
+5. client sends vector to index servers
+
+6. server returns topk videos, similarity info etc.
+
+7. Client displays results on web via js script
+
+The implementations of client / server are in `client_server.py`
 
 
