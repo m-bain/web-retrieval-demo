@@ -15,7 +15,7 @@
 
 ### Run demo
 
-Runs two separate jobs, (one for text encoding, the second for index searching, please use different sessions / screens for each job)
+Runs two separate jobs and a server, (one for text encoding, the second for index searching, please use different sessions / screens for each job and server, so this is 3 sessions/jobs in total)
 1. start index job: `python frozen_server_index.py` (change machine name / port numbers using args, defaults to local 12010)
 2. start text encoder job: `python frozen_server_encoder.py`
 3. Run server: `export FLASK_APP=demo/demo.py; flask run`
