@@ -7,7 +7,7 @@
     conda env create -f environment.yml
 
 #### 2. Copy data directory containing indexes/model (7GB) to current 
-    scp user@triton.robots.ox.ac.uk:/work/maxbain/Libs/web-retrieval-demo/data.zip
+    scp user@triton.robots.ox.ac.uk:/work/maxbain/Libs/web-retrieval-demo/data.zip .
     
     unzip data.zip
     
